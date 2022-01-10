@@ -9,4 +9,9 @@ describe('Container', () => {
     
     expect(sut.name).toBe('any_name')
   })
+  test('ensure Container is instance of Listener', () => {
+    const sut = new Container ('any_id', 'any_name')
+    
+    expect (sut).toBeInstanceOf(Listener)
+  })
 });
