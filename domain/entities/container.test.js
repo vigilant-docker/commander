@@ -2,7 +2,7 @@ interface Listener
 {
 }
 
-class Container extends Listener
+class Container implements Listener
 {
   constructor (public id: string, public name: string) {}
 }
