@@ -1,4 +1,8 @@
-class Container
+interface Listener
+{
+}
+
+class Container extends Listener
 {
   constructor (public id: string, public name: string) {}
 }
